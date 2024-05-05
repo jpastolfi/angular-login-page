@@ -47,8 +47,8 @@ export class SignupComponent {
 
   submit() {
     this.loginService.signup(this.signupForm.value.name, this.signupForm.value.email, this.signupForm.value.password).subscribe({
-      next: () => this.toastService.success("Login successful"),
-      error: () => this.toastService.error("Login failed")
+      next: () => this.toastService.success("Signup successful"),
+      error: () => this.toastService.error("Signup failed. Please check the required fields")
     });
   }
 
